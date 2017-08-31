@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'junctionlight';
+  src: url('Junction-light-webfont.eot');
+  src: url('Junction-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('Junction-light-webfont.woff2') format('woff2'),
+       url('Junction-light-webfont.woff') format('woff'),
+       url('Junction-light-webfont.ttf') format('truetype'),
+       url('Junction-light-webfont.svg#junctionlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "junctionlight";
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#main-site {
+  height: 100%;
+  display: inline-block;
+  width: 1200px;
+}
+
+.page {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: left;
+}
+
+.page-level {
+  margin: 0;
+}
+
+.page-banner {
+  order: 1;
+  text-align: center;
+}
+
+.logo-nav {
+  height: 100%;
+  width: auto;
+  display: inline-block;
+}
+
+.nav a {
+  color: black;
+  font-size: 1em;
+  text-decoration: none;
+  padding: 0 5px 0 5px;
+}
+
+.nav a:hover {
+ color: #005A54;
+}
+
+.page-content {
+  order: 2;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.blog-preview {
+  width: 100%;
+  margin: 10px;
+}
+
+.page-footer {
+  order: 3;
+  height: 100px;
+  background-color: grey;
+}
